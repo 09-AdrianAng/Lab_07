@@ -11,6 +11,10 @@ public class Player : MonoBehaviour
     public float velocity = 1;
     private Rigidbody rb;
 
+    public int ScoreCounter;
+    public Text ScoreText;
+
+
     void Start()
     {
         thisAnimation = GetComponent<Animation>();
@@ -35,5 +39,14 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         SceneManager.LoadScene("GameOver_Scene");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Point")
+        {
+            ScoreCounter += 1;
+            ScoreText.text = "SCORE: " + ScoreCounter;
+        }
     }
 }
