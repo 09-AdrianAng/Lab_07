@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -5.646
       objectReference: {fileID: 0}
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
@@ -254,8 +254,12 @@ PrefabInstance:
       objectReference: {fileID: 854209362}
     - target: {fileID: 1221792059, guid: fa616eb311850a54498fbc4920bda0fa, type: 3}
       propertyPath: velocity
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1221792059, guid: fa616eb311850a54498fbc4920bda0fa, type: 3}
+      propertyPath: ScoreText
+      value: 
+      objectReference: {fileID: 1571554005}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa616eb311850a54498fbc4920bda0fa, type: 3}
 --- !u!1 &170076733
