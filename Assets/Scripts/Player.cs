@@ -36,14 +36,17 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision obstacle)
     {
-        SceneManager.LoadScene("GameOver_Scene");
+        if (obstacle.gameObject.tag.Equals("Obstacle"))
+        {
+            SceneManager.LoadScene("GameOver_Scene");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Point")
+        if (other.gameObject.tag == "Score")
         {
             ScoreCounter += 1;
             ScoreText.text = "SCORE: " + ScoreCounter;
