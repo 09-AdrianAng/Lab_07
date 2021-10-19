@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 
         if (transform.position.y <= -3.7 || transform.position.y >= 3.7)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameOver_Scene");
         }
     }
 
